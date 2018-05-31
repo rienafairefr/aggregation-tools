@@ -19,3 +19,5 @@ cover/
 .cache
 test-report.xml
 htmlcov/
+
+\.idea/

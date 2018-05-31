@@ -58,6 +58,12 @@ setup(
     download_url='https://github.com/iot-lab/aggregation-tools',
     packages=find_packages(),
     scripts=SCRIPTS,
+    entry_points={
+        'iotlab.commands': [
+            'aggregator-serial=iotlabaggregator.serial:main',
+            'aggregator-sniffer=iotlabaggregator.sniffer:main',
+        ],
+    },
     classifiers=['Development Status :: 3 - Alpha',
                  'Programming Language :: Python',
                  'License :: OSI Approved',
